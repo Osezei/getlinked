@@ -1,27 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,300;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
 
-/* :root {
+:root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-base: #150e28;
+  --bar: rgba(255, 255, 255, 0.18);
+  --background-text-gradient: linear-gradient(270deg, #903aff 0%, #fe34b9 100%);
+}
+
+.register-button {
+  background: var(--background-text-gradient);
+}
+.links {
+  font-family: "Montserrat", sans-serif;
+}
+.links-mobile {
+  font-family: "Inter", sans-serif;
+}
+.links-active {
+  background: linear-gradient(90deg, #903aff 3.08%, #ff26b9 93.85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-button,
+h1 {
+  /* font-family: "Gloock", serif; */
+  font-family: "Clash Display", sans-serif;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+}
+.numbers {
+  font-family: "Unica One", cursive;
+}
+.hero {
+  background: url(../public/man.png),
+    lightgray -155.25px -155px / 114.411% 118.9% no-repeat;
+  background-blend-mode: hard-light;
+}
+.hero-pic {
+  /* background: url(../public/man.png),
+    lightgray -0.113px -10.671px / 105.862% 104.281% no-repeat;
+  background-blend-mode: hard-light; */
+  /* background: url(../public/man.png), lightgray 50% / cover no-repeat;
+  background-blend-mode: luminosity; */
+}
+/* .nav {
+  background: url(../public/background.png) no-repeat,
+    rgba(211, 211, 211, 0.018) -184.527px 3.278px / 146.745% 105.327% no-repeat;
+  background-blend-mode: hard-light;
 } */
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.bar {
+  background-color: var(--bar);
+}
+/* 
+ {
+  
+  background: url(../public/background.png) no-repeat,
+    rgba(211, 211, 211, 0.018) -184.527px 3.278px / 146.745% 105.327% no-repeat;
+  background-blend-mode: hard-light;
 } */
-
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+body {
+  background: var(--background-base);
+}

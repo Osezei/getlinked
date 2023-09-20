@@ -1,5 +1,21 @@
 import Image from "next/image";
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import Layout from "@/components/Layout";
+import Idea from "@/components/Idea";
+import Lady from "@/components/Lady";
+import Group from "@/components/Group";
+import Questions from "@/components/Questions";
 
 export default function Home() {
-  return <p>hello</p>;
+  const activePage = "home";
+  return (
+    <Layout activePage={activePage}>
+      <Hero />
+      {/* <Idea />
+      <Lady />
+      <Group />
+      <Questions /> */}
+    </Layout>
+  );
 }
