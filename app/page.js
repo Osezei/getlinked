@@ -6,16 +6,20 @@ import Idea from "@/components/Idea";
 import Lady from "@/components/Lady";
 import Group from "@/components/Group";
 import Questions from "@/components/Questions";
+import Footer from "@/components/Footer";
+import Timeline from "@/components/Timeline";
 
 export default function Home() {
   const activePage = "home";
   return (
     <Layout activePage={activePage}>
       <Hero />
-      {/* <Idea />
+      <Idea />
       <Lady />
       <Group />
-      <Questions /> */}
+      <Questions />
+      <Timeline />
+      <Footer />
     </Layout>
   );
 }

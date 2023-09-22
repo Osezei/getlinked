@@ -30,7 +30,7 @@ const Hero = () => {
             className="float-right mr-[42px] md:hidden"
           />
         </div>
-        <div className="flex flex-col md:justify-between">
+        <div className="flex flex-col md:flex-row md:justify-between">
           <div className="text-white relative">
             <Image
               src={Bulb}
