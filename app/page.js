@@ -8,6 +8,7 @@ import Group from "@/components/Group";
 import Questions from "@/components/Questions";
 import Footer from "@/components/Footer";
 import Timeline from "@/components/Timeline";
+import Prizes from "@/components/Prizes";
 
 export default function Home() {
   const activePage = "home";
@@ -19,6 +20,7 @@ export default function Home() {
       <Group />
       <Questions />
       <Timeline />
+      <Prizes />
       <Footer />
     </Layout>
   );

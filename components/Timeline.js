@@ -178,11 +178,11 @@ const Timeline = () => {
                       <p className=" font-bold mb-[13px] text-[#D434FE]">
                         {title}
                       </p>
-                      <p className="leading-[20.5px]">{details}</p>
+                      <p className="leading-[20.5px] h-[63px]">{details}</p>
                       <p className="text-[#D434FE]">{date}</p>
                     </div>
                     <div className="mr-[9px] mt-auto">
-                      <div className="flex flex-col gap-y-[4.6px] items-center">
+                      <div className="flex flex-col gap-y-[9.5px] items-center">
                         <div className="w-[2px] h-[77px] bg-[#D434FE]"></div>
                         <div className="w-[19.3px] h-[19.32px] register-button rounded-full flex justify-center items-center">
                           <p>{id}</p>
