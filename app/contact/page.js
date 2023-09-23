@@ -23,7 +23,9 @@ const Page = () => {
             27,Alara Street <br></br> Yaba 100012<br></br> Lagos State
           </p>
           <p>Call Us : 07067981819</p>
-          <p>we are open from Monday-Friday 08:00am - 05:00pm</p>
+          <p>
+            we are open from Monday-Friday<br></br> 08:00am - 05:00pm
+          </p>
           <div>
             <p className="text-[14px] text-[#D434FE] mb-[18px]">Share on</p>
             <div className="flex gap-x-[19px] items-center">
