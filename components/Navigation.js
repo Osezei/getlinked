@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+//import { useRouter } from "next/router";
 import { useState } from "react";
 import Link from "next/link";
 import { links } from "../data";
@@ -12,6 +13,11 @@ const Navigation = ({ activePage }) => {
   const handleToggle = () => {
     setToggle(!toggle);
   };
+  // const router = useRouter();
+  // const handleClick = () => {
+  //   router.push("/register");
+  // };
+
   return (
     <section className="">
       {/* laptop view */}
@@ -42,9 +48,12 @@ const Navigation = ({ activePage }) => {
               );
             })}
           </div>
-          <button className="register-button ml-[121px] px-[52px] py-[16px] text-white rounded-md  ">
+          <Link
+            href="/register"
+            className="register-button ml-[121px] px-[52px] py-[16px] text-white rounded-md  "
+          >
             Register
-          </button>
+          </Link>
         </div>
       </nav>
       {/* end of laptop view */}
@@ -97,9 +106,12 @@ const Navigation = ({ activePage }) => {
                     );
                   })}
                 </ul>
-                <button className="register-button px-[52px] py-[16px] text-white rounded-sm">
+                <Link
+                  href="/register"
+                  className="register-button px-[52px] py-[16px] text-white rounded-sm"
+                >
                   Register
-                </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -8,6 +8,8 @@ import Facebook from "../../public/facebook.svg";
 import Linkdedin from "../../public/linkdedin.svg";
 import { useState } from "react";
 import { ContactUs } from "../services/contactservices";
+import Link from "next/link";
+import Arrow from "../../public/arrow.svg";
 
 const Page = () => {
   const [email, setEmail] = useState("");
@@ -37,8 +39,13 @@ const Page = () => {
   const activePage = "Contact";
   return (
     <Layout activePage={activePage}>
-      <section className="text-white flex justify-center items-center gap-x-[225px] my-[56px]">
-        <div className="flex flex-col gap-y-[17px] text-[16px]">
+      <section className="text-white flex flex-col md:flex-row justify-center items-center gap-x-[225px] md:my-[56px]">
+        <div className="hidden">
+          <Link href="/">
+            <Image src={Arrow} alt="arrow" width={23} height={23} />
+          </Link>
+        </div>
+        <div className="hidden md:flex flex-col gap-y-[17px] text-[16px]">
           <h1 className="text-[#D434FE] text-[32px] font-semibold">
             Get in touch
           </h1>
@@ -87,11 +94,15 @@ const Page = () => {
           </div>
         </div>
         {/* form */}
-        <div className="contact-page rounded-[12px] w-[617px] h-[611px]">
-          <div className="w-[437px] mx-auto mt-[60px]">
+        <div className="contact-page rounded-[12px] w-[298px] md:w-[617px] md:h-[611px]">
+          <div className="w-[298px] md:w-[437px] mx-auto md:mt-[60px]">
             <div className="text-[20px] mb-[34px] font-semibold text-[#D434FE] bg-transparent">
               <h1>Questions or need assistance?</h1>
-              <h1>Let us know about it!</h1>
+
+              <h1 className=" ">Let us know about it!</h1>
+              <p className="text-white md:hidden text-[12px] mt-[24px] mb-[30px]">
+                Email us below to any question related<br></br> to our event
+              </p>
             </div>
             <form
               className="flex flex-col gap-y-[42px]"
@@ -133,7 +144,7 @@ const Page = () => {
               />
               <button
                 type="submit"
-                className="mx-auto flex justify-center register-button px-[14px] py-[8px] text-[12px] md:text-[16px] md:px-[52px] md:py-[10px] text-white rounded-[4px] md:mt-[22px] mb-[58px] md:mb-[120px]"
+                className="mx-auto flex justify-center register-button px-[14px] py-[8px] text-[12px] md:text-[16px] md:px-[52px] md:py-[10px] text-white rounded-[4px] md:mt-[22px] mb-[41px] md:mb-[120px]"
               >
                 Submit
               </button>
@@ -141,6 +152,41 @@ const Page = () => {
           </div>
         </div>
         {/* end of form */}
+        <div className="md:hidden mb-[35px]">
+          <p className="text-[14px] text-[#D434FE] mb-[5px] text-center">
+            Share on
+          </p>
+          <div className="flex gap-x-[13px] items-center">
+            <Image
+              src={Instagram}
+              width={24}
+              height={24}
+              alt="instagram"
+              className="object-contain overflow-hidden"
+            />
+            <Image
+              src={Twitter}
+              width={19}
+              height={17}
+              alt="twitter"
+              className="object-contain overflow-hidden"
+            />
+            <Image
+              src={Facebook}
+              width={10.5}
+              height={20}
+              alt="facebook"
+              className="object-contain overflow-hidden"
+            />
+            <Image
+              src={Linkdedin}
+              width={24}
+              height={24}
+              alt="linkedin"
+              className="object-contain overflow-hidden"
+            />
+          </div>
+        </div>
       </section>
     </Layout>
   );
