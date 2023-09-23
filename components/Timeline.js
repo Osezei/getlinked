@@ -1,5 +1,5 @@
 import React from "react";
-import { timeline } from "@/data";
+import { timeline } from "../data";
 
 const Timeline = () => {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import Location from "../public/location.svg";
 import Phone from "../public/phone.svg";
 import Image from "next/image";
-import { links } from "@/data";
+import { links } from "../data";
 import Link from "next/link";
 import Twitter from "../public/twitter.svg";
 import Instagram from "../public/instagram.svg";

@@ -2,7 +2,7 @@
 import React from "react";
 import { useState } from "react";
 import Link from "next/link";
-import { links } from "@/data";
+import { links } from "../data";
 import Menu from "../public/menu.svg";
 import Cancel from "../public/cancel.svg";
 import Image from "next/image";

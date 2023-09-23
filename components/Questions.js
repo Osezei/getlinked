@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Think from "../public/thinking.png";
-import { questions } from "@/data";
+import { questions } from "../data";
 
 const Questions = () => {
   return (

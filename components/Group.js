@@ -1,7 +1,7 @@
 import React from "react";
 import People from "../public/group.png";
 import Image from "next/image";
-import { criteria } from "@/data";
+import { criteria } from "../data";
 const Group = () => {
   return (
     <>
