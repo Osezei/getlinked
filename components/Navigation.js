@@ -107,7 +107,6 @@ const Navigation = ({ activePage }) => {
         </div>
       </nav>
       {/* end of mobile view */}
-      <div className="h-[1px] w-full bar"></div>
     </section>
   );
 };

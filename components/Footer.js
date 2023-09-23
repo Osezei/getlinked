@@ -11,7 +11,7 @@ import Linkdedin from "../public/linkdedin.svg";
 
 const Footer = () => {
   return (
-    <>
+    <div className="footer pt-[1px] pb-[1px] md:pt-[33px] md:pb-[28px]">
       <section className="text-white mt-[51px] md:mt-[83px] flex-col md:flex-row  flex justify-around">
         <div className="w-[271px] md:w-[500px] mx-auto md:mx-0">
           <p className="font-bold text-[20px] md:text-[36px] home-button mb-3 md:mb-2">
@@ -123,7 +123,7 @@ const Footer = () => {
       <p className="mt-[60px] md:mt-[59px] mb-[54px] text-center text-white">
         All rights reserved. © getlinked Ltd.
       </p>
-    </>
+    </div>
   );
 };
 

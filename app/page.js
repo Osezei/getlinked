@@ -9,6 +9,8 @@ import Questions from "@/components/Questions";
 import Footer from "@/components/Footer";
 import Timeline from "@/components/Timeline";
 import Prizes from "@/components/Prizes";
+import Privacy from "@/components/Privacy";
+import Sponsors from "@/components/Sponsors";
 
 export default function Home() {
   const activePage = "home";
@@ -21,6 +23,8 @@ export default function Home() {
       <Questions />
       <Timeline />
       <Prizes />
+      <Privacy />
+      <Sponsors />
       <Footer />
     </Layout>
   );

@@ -10,6 +10,7 @@ import Flash from "../public/fire.png";
 const Hero = () => {
   return (
     <>
+      <div className="h-[1px] w-full bar"></div>
       <section className="md:ml-[128px] text-center md:text-justify">
         <div className="mt-8 mb-10">
           <p className="text-white text-center md:text-right md:mr-[55px] text-[16px] md:text-[36px] font-bold italic">
